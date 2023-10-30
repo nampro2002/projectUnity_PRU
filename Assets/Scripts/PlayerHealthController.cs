@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class PlayerHealthController : MonoBehaviour
 {
-    public static PlayerHealthController instance;
     public float currentHealth, maxHealth;
-    void Awake()
+    void Start()
     {
         currentHealth = maxHealth;
     }
-    public void TakeDamage(float damage) { }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    public void TakeDamage(float damageToTake)
+    {
+        currentHealth -= damageToTake;
+        if(currentHealth < 0)
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

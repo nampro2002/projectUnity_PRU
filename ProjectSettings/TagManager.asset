@@ -39,7 +39,7 @@ TagManager:
   - 
   m_SortingLayers:
   - name: BG
-    uniqueID: 2165750615
+    uniqueID: 356830045
     locked: 0
   - name: Default
     uniqueID: 0
@@ -48,5 +48,5 @@ TagManager:
     uniqueID: 1745681869
     locked: 0
   - name: Player
-    uniqueID: 983038419
+    uniqueID: 3970975899
     locked: 0
